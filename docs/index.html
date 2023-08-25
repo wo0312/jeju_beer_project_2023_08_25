@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주맥주 홈페이지 </title>
+
+  <!-- 테일윈드 css  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- 폰트어썸 불러오기 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+  <!-- 공통 css 연결-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 공통 js연결-->
+  <script src="js/script.js"></script>
+
+
+</head>
+
+<body>
+  <!-- 헤더 구현 -->
+  <header class="pc-top-bar">
+    <div class="menu-box-1 h-[154px]">
+      <div class="con h-full flex mx-auto">
+        <div class="flex-1"></div>
+        <div class="flex-1">
+          <a href="#" class=" logo flex h-full items-center justify-center ">
+            <img src="images/제주맥주 pc로고.jpg" alt="제주맥주로고">
+          </a>
+        </div>
+        <div class="flex-1 flex items-center">
+          <div class="widget-wrap flex w-full flex-col items-end h-1/2">
+            <nav class="widget-group">
+              <ul class="flex">
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">JOIN</a></li>
+                <li><a href="#">CART</a></li>
+              </ul>
+            </nav>
+            <div class="flex-grow"></div>
+            <div class="menu-btn-group flex">
+              <a href="#" class="purchase-btn">
+                논알콜 제주누보 구매
+              </a>
+              <a href="#" class="reserv-btn">
+                양조장 예약
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-box-2 h-[60px] ">
+      <div class="con mx-auto">
+        <nav class="top-bar__menu flex h-[50px] justify-center items-center">
+          <ul class="flex">
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">BARREL SERIES</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">BREWERY</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <header class="mobile-top-bar h-[50px]">
+    <div class="mobile-con flex h-full mx-auto">
+      <div class="flex-1 flex">
+        <a href="#" class=" mobile-logo self-center px-3 ">
+          <img src="images/모바일로고.png" alt="제주맥주모바일로고">
+        </a>
+      </div>
+      <div class="flex-1 flex justify-end">
+        <a href="#" class="mobile-top-bar__side-menu-btn self-center px-3 ">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- 헤더 구현 끝-->
+
+  <!-- 섹션 비디오 구현시작 -->
+  <section class="pc-section-video-wrap">
+    <video class="w-full" src="video/제주맥주pc영상.mp4"
+      autoplay loop muted></video>
+  </section>
+  <section class="mobile-section-video-wrap">
+    <video src="video/제주맥주pc영상.mp4" autoplay loop
+      muted></video>
+  </section>
+  <!-- 섹션 비디오 구현 끝 -->
+
+  <!-- 하단바 구현 시작 -->
+  <div class="footer-wrap mt-[40px]">
+    <footer class="pc-bottom-bar mb-[100px]">
+      <div class="footer-con mx-auto px-[20px]">
+        <div class="bottom-bar__menu-box flex h-[110px]">
+          <div class="flex-1">
+            <ul class="flex flex-wrap">
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">OUR BEERS</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">IR</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#" class="!text-black">개인정보 처리방침</a></li>
+              <li><a href="#">영상정보 처리방침</a></li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <div class="bottom-bar__widget-list flex justify-end pt-[10px]">
+              <a href="#">
+                <img src="images/제주맥주유튜브.png" alt="하단바로고1">
+              </a>
+              <a href="#">
+                <img src="images/페이스북.png" alt="하단바로고2">
+              </a>
+              <a href="#">
+                <img src="images/인스타.png" alt="하단바로고3">
+              </a>
+              <a href="#">
+                <img src="images/네이버밴드.png" alt="하단바로고4">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="corp-explanation-text-box ml-[10px]">
+          <p class="text-[13px] text-[#999]">
+            제주맥주 주식회사 &nbsp; &nbsp; 대표이사 홍길동
+            <br>
+            본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11 서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층
+            <br>
+            호스팅 제공자 (주)아임웹 사업자등록번호 616-86-27415 통신판매업신고번호 제 2020-제주한림-0101 호
+            <br>
+            고객센터 02-2235-5559, jejubeer@jejubeer.co.kr
+          </p>
+          <p class="text-[11px] text-[#bcbcbc] pt-[14px]">
+            경고 : 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. 임신 중 음주는 기형아 출생 위험을 높입니다.
+          </p>
+          <p class="text-[11px] text-[#999] pt-[14px]">
+            COPYRIGHT 2021@ JEJU BEER COMPANY
+          </p>
+        </div>
+      </div>
+    </footer>
+    <footer class="mobile-bottom-bar mt-[10px] mb-[20px]">
+      <div class="footer-con mx-auto px-[20px]">
+        <div class="mobile-bottom-bar__menu-box">
+          <ul class="flex">
+            <li><a href="#">이용약관</a></li>
+            <li class="px-[15px]"><a href="#" class="!text-black">개인정보 처리방침</a></li>
+            <li><a href="#">영상정보 처리방침</a></li>
+          </ul>
+        </div>
+        <div class="corp-explanation-text-box mt-[15px]">
+          <p class="text-[13px] text-[#999]">
+            제주맥주 주식회사 &nbsp; &nbsp; 대표이사 홍길동
+            <br>
+            본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11
+            <br>
+            서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층
+            <br>
+            호스팅 제공자 (주)아임웹
+            <br>
+            사업자등록번호 616-86-27415
+            <br>
+            통신판매업신고번호 제 2020-제주한림-0101 호
+            <br>
+            고객센터 02-2235-5559, jejubeer@jejubeer.co.kr
+          </p>
+          <p class="text-[11px] text-[#bcbcbc] pt-[14px]">
+            경고 : 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. 임신 중 음주는 기형아 출생 위험을 높입니다.
+          </p>
+          <p class="text-[11px] text-[#999] pt-[14px]">
+            COPYRIGHT 2021@ JEJU BEER COMPANY
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- 하단바 구현 끝 -->
+</body>
+
+</html>

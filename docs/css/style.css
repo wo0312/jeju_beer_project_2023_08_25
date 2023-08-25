@@ -1,0 +1,176 @@
+/* 폰트적용 */
+
+@font-face {
+	font-family: "GmarketSansMedium";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html > body {
+	font-family: "GmarketSansMedium";
+}
+
+/* 라이브러리 */
+
+.con {
+	max-width: 1200px;
+}
+
+.mobile-con {
+	max-width: 1000px;
+}
+
+
+
+/* 커스텀 */
+
+.menu-box-1 .logo > img {
+	display: block;
+	width: 71px;
+}
+
+.widget-wrap > .widget-group > ul > li > a {
+	font-size: 12px;
+	display: block;
+	padding: 0 10px;
+	color: #888;
+	transition: color 0.3s;
+}
+
+.widget-wrap > .widget-group > ul > li:hover > a {
+	color: #e5e7eb;
+}
+
+.menu-btn-group {
+	gap: 0 10px;
+}
+
+.menu-btn-group > a {
+	font-size: 14px;
+	display: block;
+	padding: 5px 15px;
+	color: white;
+	border-radius: 30px;
+	transition: background-color 0.3s, color 0.3s;
+	border: 1px solid;
+}
+
+.menu-btn-group > a:first-child {
+	background-color: #ff7e6b;
+	border-color: #ff7e6b;
+}
+
+.menu-btn-group > a:hover:first-child {
+	background-color: #fff;
+	color: #ff7e6b;
+}
+
+.menu-btn-group > a:last-child {
+	background-color: #12cfca;
+}
+
+.menu-btn-group > a:hover:last-child {
+	background-color: #10adb5;
+} 
+
+.top-bar__menu > ul > li > a {
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 50px;
+	color:  #55585b;
+	display: block;
+	transition: color .3s;
+}
+
+.top-bar__menu > ul > li:hover > a {
+	color: #e5e7eb;
+}
+
+.mobile-logo > img {
+	width: 104px;
+}
+
+.mobile-top-bar__side-menu-btn > span {
+	font-size: 20px;
+	color: #1ecad3
+}
+
+/* 하단바 구현 시작 */
+.bottom-bar__menu-box ul {
+	max-width: 700px;	
+}
+
+.bottom-bar__menu-box ul > li > a {
+	font-size: 14px;
+	display: block;
+	color: #999;
+	padding: 10px;
+}
+
+.bottom-bar__widget-list > a {
+	display: block;
+	padding: 0 7px;
+}
+
+.bottom-bar__widget-list > a:first-child > img {
+	width: 190px;
+}
+
+.bottom-bar__widget-list > a:not(:first-child) > img {
+	width: 40px;
+}
+
+.mobile-bottom-bar__menu-box > ul > li > a {
+	display: block;	
+	font-size: 13px;
+	color: #999;
+}
+/* 하단바 구현 끝 */
+
+
+/* 화면 너비가 992px 이상 */
+@media(min-width: 992px) {
+	.mobile-top-bar {
+		display: none;
+	}
+	
+	.mobile-section-video-wrap {
+		display: none;
+	}
+	
+	.mobile-bottom-bar {
+		display: none;
+	}
+}
+
+/* 화면 너비가 992px 이하, 767px 이상 */
+@media(max-width: 992px) and (min-width: 767px) {
+	.pc-top-bar {
+		display: none;
+	}		
+	
+	.mobile-section-video-wrap {
+		display: none;
+	}
+	
+	.pc-bottom-bar {
+		display: none;
+	}		
+}
+
+/* 화면 너비가 766px 이하 */
+@media(max-width: 766px) {
+	.pc-top-bar {
+		display: none;
+	}
+	
+	.pc-section-video-wrap {
+		display: none;
+	}
+	
+	.pc-bottom-bar {
+		display: none;
+	}
+}
